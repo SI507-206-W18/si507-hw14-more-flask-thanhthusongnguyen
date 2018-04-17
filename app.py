@@ -20,7 +20,7 @@ def postentry():
     name = request.form["name"]
     message = request.form["message"]
     model.add_entry(name, message)
-    return redirect("/")
+    return redirect("/admin")
 
 
 @app.route("/admin")
