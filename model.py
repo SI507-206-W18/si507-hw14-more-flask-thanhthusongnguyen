@@ -28,7 +28,7 @@ def add_entry(name, text):
     now = datetime.now()
     time_string = now.strftime("%b %d, %Y %-I:%M %p")
     
-    entry = {"author": name, "text": text, "timestamp": time_string, "id": str(next_id)}
+    entry = {"author": name, "text": text, "timestamp": time_string, "id": next_id}
     next_id += 1
     
     entries.insert(0, entry) ## add to front of list
